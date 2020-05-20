@@ -1,0 +1,9 @@
+package vendor.acme.one.stringy@1.0;
+
+typedef int8_t StringyChar;
+
+struct StringySummary {
+    uint32_t  charCount;
+    uint32_t  crc;
+};
+

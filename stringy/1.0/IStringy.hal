@@ -1,0 +1,48 @@
+package vendor.acme.one.stringy@1.0;
+
+
+/**
+ * The Acme string processor, providing trivial string processing APIs
+ * to illustrate vendor custom HIDL.
+ */
+interface IStringy {
+    /**
+     * Send a string to the processor and get the same string back,
+     * with all characters reversed.
+     *
+     * @param inputText contains the input string data to process. Must not
+     *    be null.
+     * @return the input text in reverse order.
+     */
+    reverse(string inputText) generates (string outputText);
+
+    /**
+     * Create a hash of the input string and return it.
+     *
+     * @param inputText contains the input string data to process. Must not
+     *    be null.
+     * @return a hash value for the string based on the content. The hash is
+     *    not guaranteed to be collision free.
+     */
+    hash(string inputText) generates (uint32_t hash);
+
+    /**
+     * Split the input string into individual characters.
+     *
+     * @param inputText contains the input string data to process. Must not
+     *    be null.
+     * @return a vector containing each of the characters which make
+     *    up the input string, as UTF-8.
+     */
+    split(string inputText) generates (vec<StringyChar> outputChars);
+
+    /**
+     * Create summary data for the input text.
+     *
+     * @param inputText contains the input string data to process. Must not
+     *    be null.
+     * @return a StringSummary with details about the input string.
+     */
+    summarize(string inputText) generates (StringySummary summary);
+};
+
