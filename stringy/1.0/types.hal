@@ -4,6 +4,6 @@ typedef int8_t StringyChar;
 
 struct StringySummary {
     uint32_t  charCount;
-    uint32_t  crc;
+    uint32_t  hash;
 };
 
