@@ -1,2 +1,2 @@
 483801ddf74c28b29a2713a27ee7e0088ddd9afb8e3ad943962e4f407e980110 vendor.acme.one.stringy@1.0::types
-9b813012ff58421b463203c3e68542861133a0f16b80ab51a7f3eda654f93543 vendor.acme.one.stringy@1.0::IStringy
+d15c4893e8b162e1f871306a82b5c088fed81090facd6df8756c942ecf61b179 vendor.acme.one.stringy@1.0::IStringy
